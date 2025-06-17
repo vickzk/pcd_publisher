@@ -11,6 +11,8 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(PCL REQUIRED)
 find_package(pcl_conversions REQUIRED)
+find_package(ament_index_cpp REQUIRED)
+
 
 # Include PCL directories
 include_directories(${PCL_INCLUDE_DIRS})
@@ -24,6 +26,7 @@ rclcpp
 sensor_msgs
 PCL
 pcl_conversions
+ament_index_cpp
 )
 target_link_libraries(pcd_publisher ${PCL_LIBRARIES})
 
